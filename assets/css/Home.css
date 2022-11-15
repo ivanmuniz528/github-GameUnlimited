@@ -19,6 +19,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: url(../img/group-1/background.png);
+  background-repeat: no-repeat;
   max-width: 100%;
 }
 
@@ -55,7 +56,7 @@ height: 150px;
 }
 .menu li a:hover {
   background-color: grey;
-  transition: all 0.5s;
+  transition: all 6.0s;
   color: #000;
 }
 
@@ -314,7 +315,7 @@ height: 400px;
     height: 50vh;
     left: -1em;
     transform: translateY(-120%);
-    transition: all 1.4s;
+    transition: all 5.0s;
     z-index: 1;
   }
   .navbar .menu-toggle {
