@@ -56,7 +56,7 @@ height: 150px;
 }
 .menu li a:hover {
   background-color: grey;
-  transition: all 6.0s;
+  transition: all 0.5s;
   color: #000;
 }
 
