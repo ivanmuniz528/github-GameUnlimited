@@ -19,6 +19,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: url(../img/group-1/background.png);
+  background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
 }
@@ -32,8 +33,7 @@ body {
 }
 
 .Logo img{
-width: 320px;
-height: 150px;
+height: 80px;
 }
 
 .navbar .menu {
@@ -48,11 +48,13 @@ height: 150px;
 
 .menu li a {
   text-decoration: none;
+  position: relative;
+  border-radius: 20px;
   margin-right: 3em;
-  font-size: 1.3em;
+  font-size: 1em;
   color: #fff;
-  font-weight: 200;
-  padding: 10px 20px;
+  font-weight: 600;
+  padding: 15px 15px;
 }
 .menu li a:hover {
   background-color: grey;
@@ -70,6 +72,7 @@ height: 150px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 }
 
 .content-info {
@@ -77,14 +80,12 @@ height: 150px;
   color: #fff;
 }
 
-button {
+button a {
   cursor: pointer;
-  color: #fff;
-  box-shadow: 0px 3px 14px -8px rgba(0, 0, 0, 0.78);
+  color: rgb(181, 66, 66);
+  text-decoration: none;
 }
-button:hover {
-  box-shadow: none;
-}
+
 
 .btn-toBuy,
 .read-more {
@@ -99,6 +100,24 @@ button:hover {
   background: none;
   border: 1px solid #fff;
   margin: 20px;
+}
+
+.read-more a:hover{
+color: rgb(255, 255, 255);
+transition: all 1,0s;
+}
+
+
+.btn-content {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-content :hover{
+  color: rgb(255, 255, 255);
+  background-color: grey;
+  transition-duration: .3s;
 }
 
 .main img {
@@ -135,6 +154,10 @@ button:hover {
   height: 600px;
 }
 
+.about-content2 img{
+  width: 100px;
+}
+
 .about .about-info {
   margin: 4em;
 }
@@ -155,10 +178,22 @@ button:hover {
   margin-bottom: 8em;
 }
 
+
 .img-1 img {
 width:300px;
 height: 400px;
 }
+
+Article img:hover{
+  box-shadow: 20px 6px 40px rgba(0, 0, 0, 0.549);
+  transition: all 0.5s;
+  width: 20rem;
+  margin-top: 0.1rem;
+  cursor: pointer;
+  z-index: 50;
+  transform: rotate(-2deg);
+}
+
 
 .img-2 img {
   width:300px;
@@ -216,6 +251,68 @@ height: 400px;
   color: #000;
 }
 
+/* Seccion de Categprias*/
+
+.topcategory-section{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 13rem;
+}
+.sec-title .separator{
+  position: relative;
+  display: block;
+  width: 141px;
+  height: 15px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+.sec-title{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.sec-title h2{
+  font-size: 3rem;
+  font-size: 2em;
+    margin-top: -6em;
+  font-weight: 500;
+}
+.category-block{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 29rem;
+}
+.category-one img{
+  width: 77%;
+}
+.category-one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.category-one h5{
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 1rem;
+  max-width: 120px;
+  color: var(--black);
+}
+.category-one h5:hover{
+  color: var(--red);
+}
+
+
+.dividor{
+  background-color: grey;
+  width: 50px;
+  height: 3px;
+  margin: 0 auto;
+}
+
+
 /* Seccion de SOPORTE */
 
 .support {
@@ -236,7 +333,7 @@ height: 400px;
 /* Seccion del Banner */
 
 .banner {
-  background-image: url(https://res.cloudinary.com/michaelxk-com/image/upload/v1632803224/img%20headphone/banner_cmqvzm.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: auto;
@@ -259,8 +356,9 @@ height: 400px;
   grid-column: 8 / 11;
 }
 
-.banner h2 {
-  font-size: 3em;
+.banner h2{
+  text-align: center;
+  font-weight: bold;
 }
 
 .secundary-info h2,
@@ -285,6 +383,7 @@ height: 400px;
 
 .footer .social-network .fab {
   font-size: 1.8em;
+  color: #000;
   margin: 10px;
 }
 
